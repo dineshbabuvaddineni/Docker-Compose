@@ -1,0 +1,11 @@
+version: "3.0"
+services: #syntax
+  web:
+    image: web-app
+    build: .
+    ports:
+      - "8000:5000" #host port to conatainer port mapping
+  redis:
+    image: redis #it pulls image from the docker hub repositry
+
+
